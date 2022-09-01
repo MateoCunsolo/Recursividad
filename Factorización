@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int factorizacion(int);
+
 int main()
 {
     int num;
@@ -18,7 +20,7 @@ int factorizacion (int x)
 {
     if(x != 0)
     {
-        x = x * recrusividad(x-1);
+        x = x * factorizacion(x-1);
     }
     else
         x=1;
