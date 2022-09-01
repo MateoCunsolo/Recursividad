@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    
+    printf("Ingrese numero: "); 
+    scanf("%i", &num);
+    
+    num=factorizacion(num);
+    
+    printf("Factorizacion: %i\n\n", num);
+
+}
+
+int factorizacion (int x)
+{
+    if(x != 0)
+    {
+        x = x * recrusividad(x-1);
+    }
+    else
+        x=1;
+
+    return x;
+}
